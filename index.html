@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Management System</h1>
+        <div class="form-container">
+            <h2>Create Account</h2>
+            <form id="createAccountForm">
+                <label for="accountHolderName">Account Holder Name</label>
+                <input type="text" id="accountHolderName" required>
+
+                <lable for="accountNumber">Account Number</lable>
+                <input type="text" id="accountNumber" required>
+
+                <label for="initialDeposit">Initial Deposite Ammount</label>
+                <input  type="number" id="initialDeposit" required>
+
+                <button type="submit">Create Account</button>
+                <br>
+            </form>
+        </div>
+        <br/>
+        <br/>
+    
+        <!--Check balance-->
+        <div class="form-container">
+            <h2>Check Your Bank Balance</h2>
+            <!-- Check balance form -->
+            <form id="viewBalanceForm">
+                <label for="viewAccountInput">Enter your Account Number : </label>
+                <input type="text" id="viewAccountInput" required>
+                <button type="submit">Check Balance</button>
+            </form>
+            <p id="balanceMessage"></p>
+        </div>
+        <br/>
+        <br/>
+        <!-- deposite money -->
+        <div class="form-container">
+            <h2>Deposite Money</h2>
+            <form id="depositForm">
+                <label for="depositAccountNumber">Account Number : </label>
+                <input type="text" id="depositAccountNumber" required>
+
+                <label for="depositAmount">Amount to Deposite:</label>
+                <input type="number" id="depositAmount" required>
+
+                <button type="submit">Deposite</button>
+            </form>
+            <p id="depositMessage"></p>
+        </div>
+        <br/>
+        <br/>
+        <!-- withdrawl money -->
+        <div class="form-container">
+            <h2>Withdraw Money</h2>
+            <form id="withdrawForm">
+                <label for="withdrawAccountNumber">Account Number:</label>
+                <input type="text" id="withdrawAccountNumber" required>
+
+                <label for="withdrawAmount">Amount to Withdraw:</label>
+                <input type="number" id="withdrawAmount" required>
+
+                <button type="submit">Withdraw</button>
+            </form>
+            <p id="withdrawMessage"></p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    <script src="script.js"></script>
+</body>
+</html>
